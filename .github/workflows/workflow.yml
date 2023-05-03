@@ -21,7 +21,7 @@ jobs:
       - name: Checkout the default branch
         uses: actions/checkout@v3
 
-       - name: Move files to publish directory
+      - name: Move files to publish directory
         run: |
           mkdir -p publish
           cp *.list ./publish/
@@ -39,14 +39,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Git push assets to "release" branch
-          run: |
-            cd publish || exit 1
-            git init
-            git config --local user.name "github-actions[bot]"
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git checkout -b release
-            git add .
-            git commit -m "${{ env.RELEASE_NAME }}"
-            git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-            git push -f -u origin release
+        run: |
+          cd publish || exit 1
+          git init
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b release
+          git add .
+          git commit -m "${{ env.RELEASE_NAME }}"
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f -u origin release
 
