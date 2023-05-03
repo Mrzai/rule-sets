@@ -1,4 +1,4 @@
-name: custom rule sets
+name: rule sets release
 on:
   workflow_dispatch:
   push:
