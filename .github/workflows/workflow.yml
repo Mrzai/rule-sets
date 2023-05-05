@@ -24,8 +24,7 @@ jobs:
       - name: Move files to publish directory
         run: |
           mkdir -p publish
-          cp -r domainSet ./publish/
-          cp -r ruleSet ./publish/
+          cp ./domainSet/*.list ./publish/
 
       - name: Release and upload assets
         uses: softprops/action-gh-release@v1

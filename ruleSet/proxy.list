@@ -1,3 +1,0 @@
-# This is a rule set with proxy policy file for surge.
-DOMAIN-SUFFIX,ls.apple.com
-DOMAIN-SUFFIX,bugsnag.com
