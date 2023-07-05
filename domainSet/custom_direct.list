@@ -1,2 +1,20 @@
-# This is a domain set with direct policy file for surge.
+# This is a set with direct policy file for surge.
 time.apple.com
+api.smoot.apple.com
+captive.apple.com
+xp.apple.com
+configuration.apple.com
+guzzoni.apple.com
+smp-device-content.apple.com
+aod.itunes.apple.com
+mesu.apple.com
+api.smoot.apple.cn
+gs-loc.apple.com
+mvod.itunes.apple.com
+streamingaudio.itunes.apple.com
+*.lcdn-locator.apple.com
+*.lcdn-registration.apple.com
+*.ls.apple.com
+*.ess.apple.com
+*.push-apple.com.akadns.net
+*.push.apple.com
