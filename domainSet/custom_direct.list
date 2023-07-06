@@ -1,5 +1,4 @@
 # This is a set with direct policy file for surge.
 DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,ls.apple.com
 DOMAIN-SUFFIX,sinaimg.cn
 DOMAIN-SUFFIX,weibo.cn
