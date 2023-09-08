@@ -1,0 +1,3 @@
+# This is a set with direct policy file for surge.
+DOMAIN-SUFFIX,.cn
+DOMAIN-SUFFIX,apple.com
